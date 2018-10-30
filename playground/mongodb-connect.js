@@ -15,9 +15,9 @@ MongoClient.connect(
 
     db.collection("Todos")
       .find()
-      .count()
-      .then(count => {
-        console.log("todos count ", count);
+      .toArray()
+      .then(docs => {
+        console.log(JSON.stringify(docs, undefined, 2));
       });
 
     client.close();
