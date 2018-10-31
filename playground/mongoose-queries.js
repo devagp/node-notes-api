@@ -25,3 +25,7 @@ if (!ObjectID.isValid(id)) {
 //     console.log("Todo: ", todoById);
 //   })
 //   .catch(e => console.log(e));
+
+// Todo.remove({}).then(result => {
+//   console.log(result);
+// });
